@@ -10,12 +10,12 @@ services:
     build:
       context: .
       dockerfile: vds_api/Dockerfile
-  authserver:
-    image: vds_auth
-    container_name: vds_auth
-    ports:
-      - "51927:80"
-      - "22223:22"
-    build:
-      context: .
-      dockerfile: vds_auth/Dockerfile
+  # authserver:
+  #   image: vds_auth
+  #   container_name: vds_auth
+  #   ports:
+  #     - "51927:80"
+  #     - "22223:22"
+  #   build:
+  #     context: .
+  #     dockerfile: vds_auth/Dockerfile
